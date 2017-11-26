@@ -1,0 +1,15 @@
+.babelrc
+.eslintrc
+.travis.yml
+/.idea
+/coverage
+/examples
+/logo
+/modules
+/scripts
+/tools
+/upgrade-guides
+karma.conf.js
+tests.node.js
+tests.webpack.js
+webpack.config.js

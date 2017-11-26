@@ -1,5 +1,5 @@
 {
-  "name": "react-router",
+  "name": "react-router-3",
   "version": "3.2.0",
   "description": "A complete routing library for React",
   "files": [
@@ -25,7 +25,8 @@
     "start": "node examples/server.js",
     "test": "npm run lint && npm run test-node && npm run test-browser",
     "test-browser": "cross-env NODE_ENV=test karma start",
-    "test-node": "cross-env NODE_ENV=test mocha --compilers js:babel-register tests.node.js"
+    "test-node": "cross-env NODE_ENV=test mocha --compilers js:babel-register tests.node.js",
+    "prepublish": "auto-upgrade-npm-version"
   },
   "authors": [
     "Ryan Florence",
@@ -45,6 +46,7 @@
     "react": "^0.14.0 || ^15.0.0 || ^16.0.0"
   },
   "devDependencies": {
+    "auto-upgrade-npm-version": "^1.0.7",
     "babel-cli": "^6.11.4",
     "babel-core": "^6.13.2",
     "babel-eslint": "^7.2.1",
